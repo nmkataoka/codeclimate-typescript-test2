@@ -8,6 +8,9 @@ module.exports = {
     'airbnb',
     'plugin:eslint-comments/recommended',
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:import/typescript',
     'plugin:prettier/recommended', // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
   globals: {
@@ -84,21 +87,21 @@ module.exports = {
     'sort-destructure-keys/sort-destructure-keys': 2,
     'sort-keys': 2,
   },
-  overrides: [
-    // Enable strict TypeScript rules only for TypeScript files
-    {
-      files: ['**/*.ts', '**/*.tsx'],
-      extends: [
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        'plugin:import/typescript',
-        'plugin:prettier/recommended',
-      ],
-      rules: {
-        '@typescript-eslint/explicit-function-return-type': 0,
-        '@typescript-eslint/no-explicit-any': 'warn',
-        '@typescript-eslint/no-unsafe-assignment': 0,
-      },
-    },
-  ],
+  // overrides: [
+  //   // Enable strict TypeScript rules only for TypeScript files
+  //   {
+  //     files: ['**/*.ts', '**/*.tsx'],
+  //     extends: [
+  //       'plugin:@typescript-eslint/recommended',
+  //       'plugin:@typescript-eslint/recommended-requiring-type-checking',
+  //       'plugin:import/typescript',
+  //       'plugin:prettier/recommended',
+  //     ],
+  //     rules: {
+  //       '@typescript-eslint/explicit-function-return-type': 0,
+  //       '@typescript-eslint/no-explicit-any': 'warn',
+  //       '@typescript-eslint/no-unsafe-assignment': 0,
+  //     },
+  //   },
+  // ],
 };
