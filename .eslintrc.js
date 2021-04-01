@@ -4,7 +4,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:import/typescript',
-    'plugin:prettier/recommended', // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
   ignorePatterns: ['.eslintrc.js'],
   parser: '@typescript-eslint/parser',
@@ -19,7 +18,6 @@ module.exports = {
     'jest',
     'jsx-a11y',
     'import',
-    'prettier',
   ],
   rules: {
     'react/react-in-jsx-scope': 0,
