@@ -13,7 +13,3 @@ plugins:
     checks:
       import/extensions:
         enabled: false
-      postcss-modules/no-undef-class:
-        enabled: false
-      sort-destructure-keys/sort-destructure-keys:
-        enabled: false
