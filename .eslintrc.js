@@ -69,6 +69,7 @@ module.exports = {
     'no-void': ['error', { allowAsStatement: true }],
 
     'postcss-modules/no-undef-class': 2,
+    'react/react-in-jsx-scope': 0,
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
