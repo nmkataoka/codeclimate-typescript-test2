@@ -1,8 +1,4 @@
 version: "2"
-checks:
-  method-lines:
-    config:
-      threshold: 100
 plugins:
   eslint:
     enabled: true
@@ -16,8 +12,4 @@ plugins:
         - .tsx
     checks:
       import/extensions:
-        enabled: false
-      postcss-modules/no-undef-class:
-        enabled: false
-      sort-destructure-keys/sort-destructure-keys:
         enabled: false
