@@ -13,3 +13,5 @@ plugins:
     checks:
       import/extensions:
         enabled: false
+  duplication:
+    enabled: false
