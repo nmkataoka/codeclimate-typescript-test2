@@ -20,7 +20,5 @@ module.exports = {
     'jsx-a11y',
     'import',
     'prettier',
-    'postcss-modules',
-    'sort-destructure-keys',
   ],
 };
