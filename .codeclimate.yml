@@ -6,7 +6,7 @@ checks:
 plugins:
   eslint:
     enabled: true
-    channel: "eslint-7"
+    channel: "eslint-6"
     config:
       config: ./.eslintrc.js
       extensions:
