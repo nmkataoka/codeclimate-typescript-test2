@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    'plugin:eslint-comments/recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -24,19 +23,4 @@ module.exports = {
     'postcss-modules',
     'sort-destructure-keys',
   ],
-  settings: {
-    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
-    'import/resolver': {
-      typescript: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    },
-    'postcss-modules': {
-      include: ['**.module.css', '**.module.scss'],
-      postcssConfigDir: 'linters',
-    },
-  },
 };
